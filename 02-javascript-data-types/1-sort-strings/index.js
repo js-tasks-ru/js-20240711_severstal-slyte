@@ -13,21 +13,5 @@ export function sortStrings(arr, param='asc' ) {
           if (param === 'desc') {
             return b.localeCompare(a, ["ru", "en"], {caseFirst: 'lower'});
           }
-        })
-
-        /*
-        function sortStrings(arr, param = 'asc') {
-    const copyArr = [...arr];
-    if (!param) {
-      return null;
-    }
-    if (param === 'asc') {
-              return copyArr.sortArr(arr, -1);
-    } else if (param === 'desc')
-              return copyArr.sortArr(arr, 1);
-  } 
-    function sortArr(array, direction) {
-      return array.sort( (str1, str2) => direction * str1.localeCompare(str2,["ru-RU", "en-EN"],{caseFirst: 'upper'}));
-    }
-        */
+        })  
 }
