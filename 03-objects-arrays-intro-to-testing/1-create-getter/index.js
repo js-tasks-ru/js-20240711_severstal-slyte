@@ -5,16 +5,15 @@
  */
 export function createGetter(path) {
     return function (obj) {
-        const arr = path.split(".");
-        let value = obj;
-        for (const prop of arr) {
-            if (Object.hasOwn(value, prop)){
-                value = value[prop];
-            } else {
-                return;
-            }
-        }
-        return value;
-    
-    }
- }
+       const arr = path.split(".");
+       let value = obj;
+       for (const prop of arr) {
+           if (Object.hasOwn(value, prop)){
+               value = value[prop];
+           } else {
+               return;
+           }
+       }
+       return value;
+   }
+}
